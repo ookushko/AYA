@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [DishIngredients] (
-    [Id] int NOT NULL IDENTITY(1,1),
+    [Id] int NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [DishId] int NOT NULL,
     [ProductId] int NOT NULL,
     [Quantity] int NOT NULL,

@@ -1,5 +1,5 @@
 CREATE TABLE [Suppliers] (
-    [Id] int NOT NULL IDENTITY(1,1),
+    [Id] int NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [ERDPOU] int NOT NULL UNIQUE,
     [Name] nvarchar(50) NOT NULL,
     [ProductType] nvarchar(50) NOT NULL,
