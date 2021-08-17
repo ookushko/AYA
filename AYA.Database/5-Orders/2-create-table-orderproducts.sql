@@ -3,6 +3,7 @@ CREATE TABLE OrderProducts (
     [ProductId] int NOT NULL PRIMARY KEY,
     [Count] int NOT NULL,
 
-     FOREIGN KEY ([OrderId]) REFERENCES [Orders]([Id]),
-     FOREIGN KEY ([ProductId]) REFERENCES [Products]([Id])
+    FOREIGN KEY ([OrderId]) REFERENCES [Orders]([Id]),
+    FOREIGN KEY ([ProductId]) REFERENCES [Products]([Id]),
+    CONSTRAINT CHK_Count CHECK ([Count] > 0)
 );
